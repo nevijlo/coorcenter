@@ -1,0 +1,53 @@
+import { NextResponse } from 'next/server'
+import { Resend } from 'resend'
+
+const resend = new Resend('re_9vP9e8Pd_B7p1vSABrhG3qAzHoxvbkTzp')
+
+export async function POST(request: Request) {
+  try {
+    const formData = await request.formData()
+    
+    const category = formData.get('category') as string
+    const description = formData.get('description') as string
+    const university = formData.get('university') as string
+    const direction = formData.get('direction') as string
+    const course = formData.get('course') as string
+    const location = formData.get('location') as string
+    const contacts = formData.get('contacts') as string
+    const file = formData.get('file') as File | null
+
+    const categoryLabels: Record<string, string> = {
+      bullying: 'Буллинг / травля',
+      cyberbullying: 'Кибербуллинг',
+      suspicious: 'Подозрительные публикации',
+      extremism: 'Признаки вовлечения в экстремизм',
+      threats: 'Угрозы в вузе / общежитии',
+      fraud: 'Мошенничество',
+      other: 'Другое',
+    }
+
+    const emailContent = `
+Новое обращение на Координационный центр САФУ
+
+Категория: ${categoryLabels[category] || category}
+Описание: ${description}
+Вуз: ${university}
+Направление: ${direction}
+Курс: ${course}
+Место: ${location}
+Контакты: ${contacts || 'не указаны'}
+    `.trim()
+
+    const data = await resend.emails.send({
+      from: 'Koordinator <onboarding@resend.dev>',
+      to: ['germesmedium@gmail.com'],
+      subject: `Обращение: ${categoryLabels[category] || category}`,
+      text: emailContent,
+    })
+
+    return NextResponse.json({ success: true, data })
+  } catch (error) {
+    console.error('Email error:', error)
+    return NextResponse.json({ success: false, error: String(error) }, { status: 500 })
+  }
+}
