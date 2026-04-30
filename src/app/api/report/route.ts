@@ -38,11 +38,23 @@ export async function POST(request: Request) {
 Контакты: ${contacts || 'не указаны'}
     `.trim()
 
+    const attachments = []
+    if (file) {
+      const bytes = await file.arrayBuffer()
+      const buffer = Buffer.from(bytes)
+      attachments.push({
+        filename: file.name,
+        content: buffer.toString('base64'),
+        contentType: file.type,
+      })
+    }
+
     const data = await resend.emails.send({
       from: 'Koordinator <onboarding@resend.dev>',
       to: ['germesmedium@gmail.com'],
       subject: `Обращение: ${categoryLabels[category] || category}`,
       text: emailContent,
+      attachments,
     })
 
     return NextResponse.json({ success: true, data })
