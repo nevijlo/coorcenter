@@ -20,9 +20,9 @@ export async function POST(request: Request) {
       bullying: 'Буллинг / травля',
       cyberbullying: 'Кибербуллинг',
       suspicious: 'Подозрительные публикации',
-      extremism: 'Признаки вовлечения в экстремизм',
+      terrorism: 'Терроризм и экстремизм',
+      conflicts: 'Конфликты на межнациональной/межконфессиональной почве',
       threats: 'Угрозы в вузе / общежитии',
-      fraud: 'Мошенничество',
       other: 'Другое',
     }
 

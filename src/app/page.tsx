@@ -6,9 +6,9 @@ const categories = [
   { id: 'bullying', label: 'Буллинг / травля', icon: '⚠️' },
   { id: 'cyberbullying', label: 'Кибербуллинг', icon: '💻' },
   { id: 'suspicious', label: 'Подозрительные публикации', icon: '🔍' },
-  { id: 'extremism', label: 'Признаки вовлечения в экстремизм', icon: '🚨' },
+  { id: 'terrorism', label: 'Терроризм и экстремизм', icon: '🚨' },
+  { id: 'conflicts', label: 'Конфликты на межнациональной/межконфессиональной почве', icon: '⚔️' },
   { id: 'threats', label: 'Угрозы в вузе / общежитии', icon: '🏫' },
-  { id: 'fraud', label: 'Мошенничество', icon: '💰' },
   { id: 'other', label: 'Другое', icon: '📝' },
   { id: 'psychology', label: 'Психологическая помощь', icon: '🧠' },
 ]
