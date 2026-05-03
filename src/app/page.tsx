@@ -14,6 +14,7 @@ const categories = [
 ]
 
 const staff = [
+  { name: 'Владислав Сергеевич', position: 'Директор', email: '' },
   { name: 'Савельева Надежда Валерьевна', position: 'Директор УМЦ', email: 'n.saveleva@narfu.ru' },
   { name: 'Лаурита Лещук', position: 'Менеджер проектов', email: 'l.leshuk@narfu.ru' },
   { name: 'Кузнецова Юлия Сергеевна', position: 'Менеджер проектов', email: 'y.kuznetsova@narfu.ru' },
@@ -300,7 +301,7 @@ export default function Home() {
         <div className="container-main">
           <h2 className="section-title text-center">Команда координационного центра</h2>
           <p className="text-center text-gray-600 mb-8">Ломоносова, 58, Архангельск | Тел: +7 (8182) 65-05-22</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {staff.map((person) => (
               <div key={person.name} className="bg-white rounded-lg p-6 shadow-sm text-center">
                 <div className="w-20 h-20 bg-safu-blue rounded-full mx-auto mb-4 flex items-center justify-center">
