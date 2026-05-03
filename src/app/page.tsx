@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <div className="bg-safu-red/20 border border-safu-red/30 rounded-lg p-4 inline-flex items-center gap-3">
                 <span className="text-safu-red font-bold">⚠️</span>
-                <span>Если вам известно о готовящемся преступлении или теракте — немедленно звоните 112</span>
+                <span>Если вам известно о готовящемся/совершенном или совершаемом в данный момент преступлении, в том числе теракте — немедленно звоните 112</span>
               </div>
             </div>
             <img src="/center-logo.png" alt="Логотип центра" className="hidden lg:block" style={{ height: '180px', width: 'auto' }} />
