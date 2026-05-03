@@ -8,6 +8,7 @@ const categories = [
   { id: 'suspicious', label: 'Подозрительные публикации', icon: '🔍' },
   { id: 'terrorism', label: 'Терроризм и экстремизм', icon: '🚨' },
   { id: 'conflicts', label: 'Конфликты на межнациональной/межконфессиональной почве', icon: '⚔️' },
+  { id: 'dangerous', label: 'Деструктивное, агрессивное или опасное поведение', icon: '⚡' },
   { id: 'threats', label: 'Угрозы в вузе / общежитии', icon: '🏫' },
   { id: 'other', label: 'Другое', icon: '📝' },
   { id: 'psychology', label: 'Психологическая помощь', icon: '🧠' },
