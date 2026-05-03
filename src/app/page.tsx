@@ -126,7 +126,7 @@ export default function Home() {
                   onClick={() => document.getElementById('report-form')?.scrollIntoView({ behavior: 'smooth' })}
                   className="btn-emergency text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
                 >
-                  <span>🚨</span> Оставить срочное сообщение
+                  <span>📢</span> Сообщить о проблеме
                 </button>
                 <button
                   onClick={() => document.getElementById('contacts')?.scrollIntoView({ behavior: 'smooth' })}
