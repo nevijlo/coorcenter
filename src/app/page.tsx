@@ -14,9 +14,9 @@ const categories = [
 ]
 
 const staff = [
-  { name: 'Владислав Сергеевич', position: 'Директор', email: '' },
+  { name: 'Ратушинский Владислав Сергеевич', position: 'Директор', email: '' },
   { name: 'Савельева Надежда Валерьевна', position: 'Директор УМЦ', email: 'n.saveleva@narfu.ru' },
-  { name: 'Лаурита Лещук', position: 'Менеджер проектов', email: 'l.leshuk@narfu.ru' },
+  { name: 'Лещук Лаурита Васильевна', position: 'Менеджер проектов', email: 'l.leshuk@narfu.ru' },
   { name: 'Кузнецова Юлия Сергеевна', position: 'Менеджер проектов', email: 'y.kuznetsova@narfu.ru' },
   { name: 'Настя Кононова', position: 'Медиаменеджер', email: 'a.kononova@narfu.ru' },
 ]
