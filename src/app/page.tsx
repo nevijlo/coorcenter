@@ -23,9 +23,8 @@ const staff = [
 
 const emergencyContacts = [
   { number: '112', label: 'Экстренная помощь', description: 'Единый номер экстренных служб' },
-  { number: '+7 (8182) 21-83-87', label: 'Координационный центр', description: 'Телефон центра' },
+  { number: '+7 (8182) 21-83-87', label: 'ФСБ', description: 'Управление ФСБ' },
   { number: '+7 (8182) 28-64-09', label: 'ФСБ', description: 'Управление ФСБ' },
-  { number: '+7 (911) 555-28-64', label: 'ФСБ (мобильный)', description: 'Мобильный телефон' },
   { number: '+7 (8182) 21-85-05', label: 'Психологическая помощь', description: 'Психологическая поддержка студентов' },
 ]
 
