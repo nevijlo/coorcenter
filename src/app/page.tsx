@@ -323,10 +323,12 @@ export default function Home() {
         </div>
       </section>
 
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+
       <section id="contacts" className="py-16">
         <div className="container-main">
           <h2 className="section-title text-center">Официальные каналы связи</h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
@@ -343,6 +345,10 @@ export default function Home() {
                 <span className="font-medium text-safu-blue">{link.name}</span>
               </a>
             ))}
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <h3 className="text-xl font-bold text-safu-blue mb-4 text-center">Последние новости</h3>
+            <div className="elfsight-app-5114771b-12be-495c-8a2d-fa55c799289c" data-elfsight-app-lazy></div>
           </div>
         </div>
       </section>
