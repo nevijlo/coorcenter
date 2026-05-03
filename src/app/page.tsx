@@ -115,9 +115,9 @@ export default function Home() {
           <div className="flex justify-between items-start">
             <div className="flex-1">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                Координационный центр САФУ<br />
-                по противодействию терроризму<br />
-                и профилактике экстремизма
+                Координационный центр по противодействию<br />
+                идеологии терроризма и профилактике экстремизма<br />
+                САФУ
               </h1>
               <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl">
                 Безопасное пространство для своевременного сообщения о потенциальных угрозах, конфликтах и чрезвычайных ситуациях
@@ -396,7 +396,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-gray-400 text-sm">
-            © 2024 Координационный центр САФУ. Все права защищены.
+            © 2024 Координационный центр по противодействию идеологии терроризма и профилактике экстремизма САФУ. Все права защищены.
           </div>
         </div>
       </footer>
