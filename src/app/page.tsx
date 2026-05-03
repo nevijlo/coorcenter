@@ -326,7 +326,7 @@ export default function Home() {
       <section id="contacts" className="py-16">
         <div className="container-main">
           <h2 className="section-title text-center">Официальные каналы связи</h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
@@ -343,6 +343,17 @@ export default function Home() {
                 <span className="font-medium text-safu-blue">{link.name}</span>
               </a>
             ))}
+          </div>
+          <div className="text-center">
+            <p className="text-gray-600 mb-4">Актуальные новости публикуются в группе ВКонтакте и Мессенджере Max</p>
+            <a
+              href="https://vk.com/koorcentr_narfu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-safu-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-all"
+            >
+              Перейти в группу ВКонтакте для просмотра новостей
+            </a>
           </div>
         </div>
       </section>
