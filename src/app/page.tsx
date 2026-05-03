@@ -139,7 +139,7 @@ export default function Home() {
                 <span>Если вам известно о готовящемся преступлении или теракте — немедленно звоните 112</span>
               </div>
             </div>
-            <img src="/center-logo.png" alt="Логотип центра" className="hidden lg:block" style={{ height: '150px', width: 'auto' }} />
+            <img src="/center-logo.png" alt="Логотип центра" className="hidden lg:block" style={{ height: '180px', width: 'auto' }} />
           </div>
         </div>
       </section>
