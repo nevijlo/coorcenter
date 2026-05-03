@@ -399,6 +399,7 @@ export default function Home() {
               <div className="space-y-2 text-gray-300 text-sm">
                 <p>Тел: +7 (8182) 21-85-01</p>
                 <p>Email: safety@narfu.ru</p>
+                <p>Техническая поддержка: t.spirin@narfu.ru</p>
               </div>
             </div>
           </div>
