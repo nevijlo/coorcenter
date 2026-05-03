@@ -215,7 +215,7 @@ export default function Home() {
                     <option>Филиал в Северодвинске (ИСМАРТ)</option>
                     <option>Филиал в Северодвинске (Технический колледж)</option>
                     <option>Арктический морской институт</option>
-                    <option>ЧОУ ВО "Институт управления"</option>
+                    <option>ЧОУ ВО 'Институт управления'</option>
                     <option>СГМУ (г. Архангельск)</option>
                     <option>Другое</option>
                   </select>
