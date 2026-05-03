@@ -290,7 +290,7 @@ export default function Home() {
                 <div className="p-4 bg-red-100 text-red-800 rounded-lg text-center">Ошибка при отправке. Попробуйте позже.</div>
               )}
               <p className="text-sm text-gray-500 text-center">
-                Информация передается в профильный центр. Цель обращения — профилактика и обеспечение безопасности.
+                Информация передается в профильный центр. Цель обращения — профилактика.
               </p>
             </form>
           </div>
