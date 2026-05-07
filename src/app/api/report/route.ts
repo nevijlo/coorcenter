@@ -52,7 +52,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: 'Koordinator <onboarding@resend.dev>',
-      to: ['v.ratushinskij@narfu.ru', 'germesmedium@gmail.com'],
+      to: ['v.ratushinskij@narfu.ru'],
       subject: `Обращение: ${categoryLabels[category] || category}`,
       text: emailContent,
       attachments,
