@@ -408,18 +408,8 @@ export default function Home() {
               </a>
             ))}
           </div>
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-xl font-bold text-safu-blue mb-4 text-center">Последние новости</h3>
-            <div className="flex justify-center overflow-hidden">
-                <iframe
-                  title="Новости ВКонтакте"
-                  src="https://vk.com/widget_community.php?app=0&width=420px&_ver=1&gid=216086387&mode=4&color1=FFFFFF&color2=1F2937&color3=0066B3"
-                  width="420"
-                  height="480"
-                  className="w-full max-w-[420px] bg-white"
-                  loading="lazy"
-                />
-              </div>
+          <div className="w-full">
+            <div className="elfsight-app-07b6674e-a136-406a-afcb-7e8462037629" data-elfsight-app-lazy></div>
           </div>
         </div>
       </section>
