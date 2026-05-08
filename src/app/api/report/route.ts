@@ -1,10 +1,18 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend('re_9vP9e8Pd_B7p1vSABrhG3qAzHoxvbkTzp')
+const resendApiKey = process.env.RESEND_API_KEY
+const resend = resendApiKey ? new Resend(resendApiKey) : null
 
 export async function POST(request: Request) {
   try {
+    if (!resend) {
+      return NextResponse.json(
+        { success: false, error: 'Server is not configured: RESEND_API_KEY is missing' },
+        { status: 500 },
+      )
+    }
+
     const formData = await request.formData()
     
     const category = formData.get('category') as string
