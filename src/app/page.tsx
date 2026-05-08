@@ -217,7 +217,7 @@ export default function Home() {
         <div className="container-main">
           <h2 className="section-title text-center">Форма обращения</h2>
           <div className="max-w-2xl mx-auto">
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8" onSubmit={handleSubmit}>
               <div>
                 <Label htmlFor="category" className="mb-2">Категория обращения</Label>
                 <Select
