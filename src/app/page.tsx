@@ -54,7 +54,7 @@ const legalInfo = [
 const socialLinks = [
   { name: 'ВКонтакте', url: 'https://vk.com/koorcentr_narfu', icon: '/vk-icon.webp', isImage: true },
   { name: 'Max', url: 'https://max.ru/join/9VGOF4aYJee8tjzcdAWXtVBLNOcgLZ---SJyVemcGN4', icon: '/max-icon.jpg', isImage: true },
-  { name: 'Сайт САФУ', url: 'https://narfu.ru', icon: '🌐', isImage: false },
+  { name: 'Сайт САФУ', url: 'https://narfu.ru', icon: '/safu-icon.png', isImage: true },
 ]
 
 const universities = [
