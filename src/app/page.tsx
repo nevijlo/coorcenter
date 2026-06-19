@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -96,15 +96,6 @@ export default function Home() {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
-
-  useEffect(() => {
-    const existing = document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')
-    if (existing) return
-    const script = document.createElement('script')
-    script.src = 'https://elfsightcdn.com/platform.js'
-    script.async = true
-    document.body.appendChild(script)
-  }, [])
 
   const handleCategoryClick = (categoryId: string) => {
     if (categoryId === 'psychology') {

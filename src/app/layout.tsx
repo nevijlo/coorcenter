@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={cn("font-sans", inter.variable)}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script src="https://elfsightcdn.com/platform.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }
