@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { VkFeedWidget } from '@/components/VkFeedWidget'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -409,7 +410,7 @@ export default function Home() {
             ))}
           </div>
           <div className="w-full">
-            <div className="elfsight-app-07b6674e-a136-406a-afcb-7e8462037629" data-elfsight-app-lazy></div>
+            <VkFeedWidget />
           </div>
         </div>
       </section>
